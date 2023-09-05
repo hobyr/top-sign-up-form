@@ -4,37 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>This page is online.</p>
-    <form action="" method="post">
-        <h2>Let's do this!</h2>
-        <label for="firstname">
-            First Name
-            <input type="text">
-        </label>
-        <label for="lastname">
-            Last Name
-            <input type="text">
-        </label>
-        <label for="email">
-            Email
-            <input type="email">
-        </label>
-        <label for=phonenumber">
-            Phone Number
-            <input type="text">
-        </label>
-        <label for="password">
-            Password
-            <input type="password">
-        </label>
-        <label for="confirmpwd">
-            Confirm Password
-            <input type="password">
-        </label>
-        <button>Create Account</button>
-        <p>Already have an account? <a href="">Log in</a></p>
-    </form>
+    <div class="logo">
+        <!-- <p>This is where the logo is going to be.</p> -->
+    </div>
+    <div class="form-side">
+        <div class="call-to-action">
+            <p class="action-text">This is not a real online service! You know you need something like this in your
+                life to help you realize your deepest dreams.<br>
+            Sign up <i>now</i> to get started.</p>
+            <p class="action-text">You <i>know</i> you want to.</p>
+        </div>
+        <form action="" method="post">
+            <div class="form-inputs">
+                <p class="action-text">Let's do this!</p>
+                <div class="form-section">
+                    <div class="form-item">
+                        <label for="firstname">
+                            First Name
+                        </label>
+                        <input type="text">
+                    </div>
+                    <div class="form-item">
+                        <label for="lastname">
+                            Last Name
+                        </label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-item">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input type="email">
+                    </div>
+                    <div class="form-item">
+                        <label for=phonenumber">
+                            Phone Number
+                        </label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-item">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password">
+                    </div>
+                    <div class="form-item">
+                        <label for="confirmpwd">
+                            Confirm Password
+                        </label>
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <button>Create Account</button>
+        </form>
+        <p class="account-exist">Already have an account? <a href="">Log in</a></p>
+    </div>
 </body>
 </html>

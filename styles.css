@@ -1,3 +1,52 @@
-.html {
-    background-color: #BBBBBB;
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.logo {
+    width: 30%;
+    background-color: green;
+}
+
+.form-side {
+    width: 70%;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-inputs {
+    background-color: hsl(80deg, 100%, 70%);
+}
+
+.form-inputs p {
+    padding-top: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    margin: 10px 0;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.form-section {
+    display: flex;
+    gap: 60px;
+    align-items: space-evenly;
+}
+
+button {
+    margin: 0 30px;
+}
+
+.form-section, .action-text, .account-exist {
+    padding: 0 30px;
+    margin: 25px 0;
 }
