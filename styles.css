@@ -4,21 +4,26 @@ body {
     height: 100vh;
 }
 
+.emph {
+    font-style: italic;
+}
+
 .logo {
-    width: 30%;
+    width: 40%;
     background-color: green;
 }
 
 .form-side {
-    width: 70%;
-    background-color: skyblue;
+    width: 60%;
+    background-color: #FDFDFD;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .form-inputs {
-    background-color: hsl(80deg, 100%, 70%);
+    background-color: white;
+    box-shadow: 0 0 20px 0px #888;
 }
 
 .form-inputs p {
@@ -44,6 +49,8 @@ label {
 
 button {
     margin: 0 30px;
+    padding: 15px 25px;
+    border-radius: 5px;
 }
 
 .form-section, .action-text, .account-exist {
