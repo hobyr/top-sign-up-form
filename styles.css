@@ -9,6 +9,11 @@ p {
     font-size: 1.5em;
 }
 
+.errorSubtext {
+    font-size: 0.7em;
+    color: #ff3c3c;
+}
+
 .emph {
     font-style: italic;
 }
@@ -80,7 +85,7 @@ p {
 
 .form-item input:focus {
     box-shadow: 1px 2px 3px 0px gray;
-    outline: #80d4ff solid 1px;
+    outline: #0021ff solid 1px;
 }
 
 .password.error, .confirmpwd.error {
