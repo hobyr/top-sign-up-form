@@ -15,7 +15,10 @@ p {
 
 .logo {
     width: 40%;
-    background-color: green;
+}
+
+.bckg-image {
+    height: 100%;
 }
 
 .call-to-action {
@@ -75,9 +78,8 @@ p {
 }
 
 .form-item input:focus {
-    box-shadow: 2px 2px 5px 0 gray;
-    outline: hsl(220deg, 100%, 65%) solid 1px;
-    border: 1px solid hsl(220deg, 100%, 65%);
+    box-shadow: 1px 2px 3px 0px gray;
+    outline: #80d4ff  solid 1px;
 }
 
 button {
