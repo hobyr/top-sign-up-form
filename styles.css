@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -20,7 +24,7 @@ p {
 
 .logo {
     width: 40%;
-    height: 100vh;
+    height: calc(100vh - 2px);
 }
 
 .bckg-image {
@@ -28,8 +32,8 @@ p {
 }
 
 .call-to-action {
-    padding-left: 30px;
-    width: 75%;
+    padding: 30px;
+    /* width: 75%; */
 }
 
 .call-to-action .action-text {
