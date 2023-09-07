@@ -2,6 +2,11 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 1.5em;
 }
 
 .emph {
@@ -13,6 +18,16 @@ body {
     background-color: green;
 }
 
+.call-to-action {
+    padding-left: 30px;
+    width: 75%;
+}
+
+.call-to-action .action-text {
+    margin: 25px 0;
+    line-height: 1.15em;
+}
+
 .form-side {
     width: 60%;
     background-color: #FDFDFD;
@@ -21,39 +36,68 @@ body {
     justify-content: center;
 }
 
-.form-inputs {
-    background-color: white;
-    box-shadow: 0 0 20px 0px #888;
+.form-section {
+    display: flex;
+    gap: 120px;
+    align-items: space-evenly;
 }
 
-.form-inputs p {
-    padding-top: 20px;
+.form-inputs {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 40px 30px;
+    background-color: white;
+    box-shadow: 0 0 20px 0px #888;
 }
 
 .form-item {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
-    margin: 10px 0;
+    margin-top: 15px;
 }
 
-label {
+.form-inputs .action-text {
+    margin-bottom: 25px;
+}
+
+.form-item label {
     text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 0.8em;
 }
 
-.form-section {
-    display: flex;
-    gap: 60px;
-    align-items: space-evenly;
-}
-
-button {
-    margin: 0 30px;
-    padding: 15px 25px;
+.form-item input {
+    padding: 8px 5px;
+    width: 200px;
+    font-size: 14px;
+    border: 1px solid #E5E7EB;
     border-radius: 5px;
 }
 
-.form-section, .action-text, .account-exist {
-    padding: 0 30px;
-    margin: 25px 0;
+.form-item input:focus {
+    box-shadow: 2px 2px 5px 0 gray;
+    outline: hsl(220deg, 100%, 65%) solid 1px;
+    border: 1px solid hsl(220deg, 100%, 65%);
+}
+
+button {
+    margin: 25px 30px;
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: forestgreen;
+    font-size: 1.1em;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 5px 0 gray;
+}
+
+.account-exist {
+    font-size: 0.9em;
+    margin-left: 30px;
+}
+
+.account-exist a {
+    color: forestgreen;
+    text-decoration: none;
+    font-weight: bold;
 }
