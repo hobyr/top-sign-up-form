@@ -11,9 +11,17 @@ let checkPasswords = function (e) {
         console.log("Success!");
         pwdField.classList.remove("error");
         pwdFieldConf.classList.remove("error");
+
+        let warnText = document.querySelector(".password-item p");
+        warnText.parentNode.removeChild(warnText);
     } else {
         pwdField.classList.add("error");
         pwdFieldConf.classList.add("error");
+        
+        let warnText = document.createElement("p");
+        warnText.innerText = "* passwords do not match";
+        let pwdItem = document.querySelector(".password-item");
+        pwdItem.appendChild(warnText);
     }
 };
 
