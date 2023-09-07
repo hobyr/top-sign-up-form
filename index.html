@@ -15,6 +15,7 @@
         <!-- <p>This is where the logo is going to be.</p> -->
         <img src="https://images.unsplash.com/photo-1581394337982-d31dfc7cafb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
          class="bckg-image" alt="Colorful suspended umbrellas" srcset="">
+        <!-- <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin logo" srcset=""> -->
     </div>
     <div class="form-side">
         <div class="call-to-action">
@@ -31,13 +32,13 @@
                         <label for="firstname">
                             First Name
                         </label>
-                        <input type="text" required>
+                        <input type="text" id="firstname" class="firstname">
                     </div>
                     <div class="form-item">
                         <label for="lastname">
                             Last Name
                         </label>
-                        <input type="text" required>
+                        <input type="text" id="lastname" class="lastname">
                     </div>
                 </div>
                 <div class="form-section">
@@ -45,13 +46,13 @@
                         <label for="email">
                             Email
                         </label>
-                        <input type="email" required    >
+                        <input type="email" id="email" class="email">
                     </div>
                     <div class="form-item">
                         <label for=phonenumber">
                             Phone Number
                         </label>
-                        <input type="text">
+                        <input type="text" id="phonenumber" class="phonenumber">
                     </div>
                 </div>
                 <div class="form-section">
@@ -59,19 +60,21 @@
                         <label for="password">
                             Password
                         </label>
-                        <input type="password" class="error" required>
+                        <input type="password" id="password" class="password" required>
                     </div>
                     <div class="form-item">
                         <label for="confirmpwd" required>
                             Confirm Password
                         </label>
-                        <input type="password" class="error" >
+                        <input type="password" id="password-confirm" class="confirmpwd" >
                     </div>
                 </div>
             </div>
-            <button>Create Account</button>
+            <button id="submit-form">Create Account</button>
         </form>
         <p class="account-exist">Already have an account? <a href="">Log in</a></p>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

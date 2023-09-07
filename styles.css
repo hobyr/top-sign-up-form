@@ -15,6 +15,7 @@ p {
 
 .logo {
     width: 40%;
+    height: 100vh;
 }
 
 .bckg-image {
@@ -79,14 +80,19 @@ p {
 
 .form-item input:focus {
     box-shadow: 1px 2px 3px 0px gray;
-    outline: #80d4ff  solid 1px;
+    outline: #80d4ff solid 1px;
+}
+
+.password.error, .confirmpwd.error {
+    /* background-color: #ff3c3c; */
+    border: 1px solid #ff3c3c;
 }
 
 button {
     margin: 25px 30px;
     padding: 15px 50px;
     border-radius: 5px;
-    background-color: forestgreen;
+    background-color: #66b743;
     font-size: 1.1em;
     color: white;
     border: none;
@@ -99,7 +105,7 @@ button {
 }
 
 .account-exist a {
-    color: forestgreen;
+    color: #66b743;
     text-decoration: none;
     font-weight: bold;
 }
