@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -9,71 +9,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="logo">
-        <img src="https://images.unsplash.com/photo-1581394337982-d31dfc7cafb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-         class="bckg-image" alt="Colorful suspended umbrellas" srcset="">
-        <!-- <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin logo" srcset=""> -->
+  </head>
+  <body>
+    <div class="left-side">
+      <div class="logo">
+        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin logo" srcset="">
+        <p>Odin</p>
+      </div>
     </div>
     <div class="form-side">
-        <div class="call-to-action">
-            <p class="action-text">This is not a real online service! You know you need something like this in your
-                life to help you realize your deepest dreams.<br>
-            Sign up <span class="emph">now</span> to get started.</p>
-            <p class="action-text">You <span class="emph">know</span> you want to.</p>
+      <div class="call-to-action">
+        <p class="action-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up <span class="emph">now</span> to get started.</p>
+        <p class="action-text">You <span class="emph">know</span> you want to.</p>
+      </div>
+      <form action="" id="myform">
+        <p>Let's do this!</p>
+        <div class="form-pair">
+          <div class="form-item">
+            <label for="firstname">First Name</label>
+            <input id="firstname" class="firstname" type="">
+          </div>
+          <div class="form-item">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" class="lastname" type="">
+          </div>
         </div>
-        <form action="" method="post">
-            <div class="form-inputs">
-                <p class="action-text">Let's do this!</p>
-                <div class="form-section">
-                    <div class="form-item">
-                        <label for="firstname">
-                            First Name
-                        </label>
-                        <input type="text" id="firstname" class="firstname">
-                    </div>
-                    <div class="form-item">
-                        <label for="lastname">
-                            Last Name
-                        </label>
-                        <input type="text" id="lastname" class="lastname">
-                    </div>
-                </div>
-                <div class="form-section">
-                    <div class="form-item">
-                        <label for="email">
-                            Email
-                        </label>
-                        <input type="email" id="email" class="email">
-                    </div>
-                    <div class="form-item">
-                        <label for=phonenumber">
-                            Phone Number
-                        </label>
-                        <input type="text" id="phonenumber" class="phonenumber">
-                    </div>
-                </div>
-                <div class="form-section">
-                    <div class="form-item password-item">
-                        <label for="password">
-                            Password
-                        </label>
-                        <input type="password" id="password" class="password" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="confirmpwd" required>
-                            Confirm Password
-                        </label>
-                        <input type="password" id="password-confirm" class="confirmpwd" >
-                    </div>
-                </div>
-            </div>
-            <button id="submit-form">Create Account</button>
-        </form>
-        <p class="account-exist">Already have an account? <a href="">Log in</a></p>
+        <div class="form-pair">
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input id="email" class="email" type="email">
+          </div>
+          <div class="form-item">
+            <label for="phonenumber">Phone Number</label>
+            <input id="phonenumber" class="phonenumber" type="">
+          </div>
+        </div>
+        <div class="form-pair">
+          <div class="form-item">
+            <label for="password">Password</label>
+            <input id="password" class="password" type="password">
+          </div>
+          <div class="form-item">
+            <label for="confirmpassword">Confirm password</label>
+            <input id="confirmpassword" class="confirmpassword" type="password">
+          </div>
+        </div>
+      </form>
+      <input type="submit" value="Create Account" form="myform" id="form-submit">
+      <p class="account-exist">Already have an account? <a href="">Log in</a></p>
     </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
