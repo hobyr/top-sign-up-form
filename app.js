@@ -11,7 +11,7 @@ let checkPasswords = function (e) {
     pwdField.classList.remove("error");
     pwdFieldConf.classList.remove("error");
 
-    let warnText = document.querySelector(".password p");
+    let warnText = document.querySelector("#password p");
     warnText.parentNode.removeChild(warnText);
   } else {
     e.preventDefault();
@@ -24,7 +24,7 @@ let checkPasswords = function (e) {
       let warnText = document.createElement("p");
       warnText.innerText = "* passwords do not match";
       warnText.classList.add("errorSubtext");
-      let pwdItem = document.querySelector(".password");
+      let pwdItem = document.querySelector("#password");
       console.log(pwdItem);
       pwdItem.parentElement.appendChild(warnText);
     }
