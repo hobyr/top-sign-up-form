@@ -100,7 +100,7 @@ form {
 
 .form-pair input:focus {
   outline: 1px solid #4fb7ff;
-  border: 1px solid #4fb7ff;
+  border-color: #4fb7ff;
 }
 
 label {
@@ -128,7 +128,7 @@ label {
 }
 
 #password.error, #confirmpassword.error {
-  border: 1px solid #ff3c3c;
+  border-color: #ff3c3c;
 }
 
 .account-exist {

@@ -28,18 +28,18 @@
         <p>Let's do this!</p>
         <div class="form-pair">
           <div class="form-item">
-            <label for="firstname">First Name</label>
-            <input id="firstname" type="text" placeholder="Thor" name="firstname">
+            <label for="firstname">First Name*</label>
+            <input id="firstname" type="text" placeholder="Thor" name="firstname" required>
           </div>
           <div class="form-item">
-            <label for="lastname">Last Name</label>
-            <input id="lastname" type="text" placeholder="Odinson" name="lastname">
+            <label for="lastname">Last Name*</label>
+            <input id="lastname" type="text" placeholder="Odinson" name="lastname" required>
           </div>
         </div>
         <div class="form-pair">
           <div class="form-item">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="thor.odinson@myodin.net" name="email">
+            <label for="email">Email*</label>
+            <input id="email" type="email" placeholder="thor.odinson@myodin.net" name="email" required>
           </div>
           <div class="form-item">
             <label for="phonenumber">Phone Number</label>
@@ -48,16 +48,16 @@
         </div>
         <div class="form-pair">
           <div class="form-item">
-            <label for="password">Password</label>
-            <input id="password" type="password" name="password">
+            <label for="password">Password*</label>
+            <input id="password" type="password" name="password" minlength="8" required>
           </div>
           <div class="form-item">
             <label for="confirmpassword">Confirm password</label>
-            <input id="confirmpassword" type="password">
+            <input id="confirmpassword" type="password" minlength=8 required>
           </div>
         </div>
       </form>
-      <input type="submit" value="Create Account" form="myform" id="form-submit">
+      <button type="submit" form="myform" id="form-submit">Create Account</button>
       <p class="account-exist">Already have an account? <a href="">Log in</a></p>
     </div>
 
